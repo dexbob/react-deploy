@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$tablet: 999px;
+$mobile: 599px;
+
+:root {
+	--keyRGB: 40, 40, 40;
+}
+//rgba(var(--keyRGB), 0.5);
+//rgba(40,40,40,0.5);
+//black: 40,40,40
+//hotpink: 184, 0, 190;
+//blue: 0, 120, 150;
+//scss파일 없이 동적으로 제어되는 스타일을 css변수로 제어가 필요할때 클래스명 부여후 !import로 우선순위 높여줌
+.mask {
+	// background-color: rgba(var(--keyRGB), 1) !important;
+	background: linear-gradient(90deg, rgba(var(--keyRGB), 1), #eee) !important;
+}
+.maskText {
+	color: rgba(var(--keyRGB), 0.8) !important;
+}
+.test {
+	background: rgb(0, 120, 150);
+}
+
+// common
+@import './common/reset';
+@import './common/header';
+@import './common/footer';
+@import './common/layout';
+@import './common/modal';
+@import './common/mailForm';
+@import './common/map';
+@import './common/mobileMenu';
+
+// main
+@import './main/home';
+@import './main/visual';
+
+// sub
+@import './sub/members';
+@import './sub/youtube';
+@import './sub/youtubeDetail';
+@import './sub/gallery';
