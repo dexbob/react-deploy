@@ -1,5 +1,5 @@
-import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function MailForm() {
 	const ref_form = useRef(null);

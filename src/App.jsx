@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Footer from './components/common/Footer';
 import Header from './components/common/Header';
 import Home from './components/main/home';
@@ -8,10 +9,9 @@ import Members from './components/sub/Members';
 import Posts from './components/sub/Posts';
 import Youtube from './components/sub/Youtube';
 import YoutubeDetail from './components/sub/YoutubeDetail';
-import { AnimatePresence } from 'framer-motion';
 import MobileMenu from './components/common/MobileMenu';
-import { useZustandStore } from './hooks/useZustand';
 import ColorSelector from './components/common/ColorSelector';
+import { useZustandStore } from './hooks/useZustand';
 
 export default function App() {
 	const IsMenu = useZustandStore(state => state.IsMenu);

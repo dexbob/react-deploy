@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import Layout from '../common/Layout';
-import Pic from '../common/Pic';
-import Modal from '../common/Modal';
 import Content from '../common/Content';
+import Layout from '../common/Layout';
+import Modal from '../common/Modal';
+import Pic from '../common/Pic';
 import { useFlickrQuery } from '../../hooks/useFlickr';
 import { useZustandStore } from '../../hooks/useZustand';
 

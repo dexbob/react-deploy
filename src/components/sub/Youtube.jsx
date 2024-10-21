@@ -1,7 +1,6 @@
-// import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
-import { Link } from 'react-router-dom';
 import Content from '../common/Content';
 import useShortenText from '../../hooks/useShortenText';
 import UseCombineText from '../../hooks/useCombineText';

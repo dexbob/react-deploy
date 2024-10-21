@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import useThrottle from '../../hooks/useThrottle';
-// import _ from 'lodash';
 
 export default function Map() {
 	// const { kakao } = window;
@@ -42,7 +41,6 @@ export default function Map() {
 	const initPos = useCallback(() => ref_instMap.current.setCenter(latlng), [latlng]);
 	// 쓰로틀 처리가 반영된 위치초기화 함수
 	const throttleInitPos = useThrottle(initPos, 300);
-	// const throttleInitPos = _.throttle(initPos, 300);    // lodash의 throttle함수 이용
 
 	// Index값 변경시 실행할 useEffect (새로운 Index값으로 지도인스턴스 갱신)
 	useEffect(() => {

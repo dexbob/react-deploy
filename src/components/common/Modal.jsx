@@ -1,5 +1,3 @@
-// import { useGlobalDispatch, ACTIONS } from '../../hooks/useGlobal';
-
 import { useZustandStore } from '../../hooks/useZustand';
 
 export default function Modal({ children }) {
@@ -8,7 +6,6 @@ export default function Modal({ children }) {
 	return (
 		<aside className='modal'>
 			<div className='con'>{children}</div>
-			{/* <button className='btnClose' onClick={() => dispatch({ type: ACTIONS.MODAL_TOGGLE })}> */}
 			<button className='btnClose' onClick={setModalToggle}>
 				CLOSE
 			</button>

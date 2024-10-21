@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { useFlickrQuery } from '../../hooks/useFlickr';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Autoplay, Pagination, Virtual } from 'swiper/modules';
 import { FaPlay } from 'react-icons/fa';
+import { useFlickrQuery } from '../../hooks/useFlickr';
 import Pic from '../common/Pic';
 import 'swiper/css';
 import 'swiper/css/virtual';

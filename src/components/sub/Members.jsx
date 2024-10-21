@@ -1,9 +1,9 @@
 import Layout from '../common/Layout';
-import memberData from '../../data/memberData';
-import Pic from '../common/Pic';
-import MaskBox from '../common/MaskBox';
-import MaskText from '../common/MaskText';
 import Content from '../common/Content';
+import MaskText from '../common/MaskText';
+import MaskBox from '../common/MaskBox';
+import Pic from '../common/Pic';
+import memberData from '../../data/memberData';
 
 export default function Members() {
 	return (

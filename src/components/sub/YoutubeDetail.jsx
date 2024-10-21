@@ -1,8 +1,8 @@
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../common/Layout';
-import { useEffect, useState } from 'react';
-import UseCombineText from '../../hooks/useCombineText';
 import Content from '../common/Content';
+import UseCombineText from '../../hooks/useCombineText';
 
 export default function YoutubeDetail() {
 	const { id } = useParams();
