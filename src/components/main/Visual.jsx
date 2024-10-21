@@ -8,7 +8,6 @@ import 'swiper/css';
 import 'swiper/css/virtual';
 
 export default function Visual() {
-	console.log('Visual');
 	const [Index, setIndex] = useState(0);
 	const { data, isSuccess } = useFlickrQuery({ type: 'interest' });
 	const srcBase = 'https://live.staticflickr.com';

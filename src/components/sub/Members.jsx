@@ -6,7 +6,6 @@ import MaskText from '../common/MaskText';
 import Content from '../common/Content';
 
 export default function Members() {
-	console.log('Members');
 	return (
 		<Layout title={'MEMBERS'}>
 			<MaskText delay={0.5} color='#444' style={{ fontSize: 20 }}>
@@ -67,9 +66,3 @@ export default function Members() {
 		</Layout>
 	);
 }
-// 호출되는 순간 가상DOM이 아닌 이전 랜더링때 변환된 실제DOM을 직접 가져와 스타일 변경
-// 문제점: 최신요소가 아니기에 엉뚱한 처리 가능, 실제DOM을 제어하기에 추후 데이터 추적 불가능
-// const changeColor = () => {
-// 	const pEl = document.querySelector(".titBox p");
-// 	pEl.style.color = "red";
-// };

@@ -2,7 +2,6 @@ import Content from '../common/Content';
 import Layout from '../common/Layout';
 
 export default function Posts() {
-	console.log('Posts');
 	return (
 		<Layout title={'POSTS'}>
 			<Content delay={1}>

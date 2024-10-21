@@ -7,7 +7,6 @@ import { useFlickrQuery } from '../../hooks/useFlickr';
 import { useZustandStore } from '../../hooks/useZustand';
 
 export default function Gallery() {
-	console.log('Gallery');
 	const IsModal = useZustandStore(state => state.IsModal);
 	const setModalToggle = useZustandStore(state => state.setModalToggle);
 	const ref_gallery = useRef(null);
@@ -47,6 +46,10 @@ export default function Gallery() {
 		<>
 			<Layout title={'GALLERY'}>
 				<Content delay={0} customMotion={customMotion}>
+					<div className='notice'>
+						<p>This web page was created for study purpose, not for commercial use</p>
+						<p>The Images below is sourced from unplash.com</p>
+					</div>
 					<article className='controller'>
 						<ul className='type'>
 							<li

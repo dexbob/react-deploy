@@ -8,14 +8,8 @@ import UseCombineText from '../../hooks/useCombineText';
 import { useYoutubeQuery } from '../../hooks/useYoutube';
 
 export default function Youtube() {
-	console.log('Youtube');
-	// const [Vids, setVids] = useState([]);
 	const shortenText = useShortenText();
 	const combineText = UseCombineText();
-
-	// useEffect(() => {
-	// 	fetchYoutube(setVids);
-	// }, []);
 
 	// data: 데이터정보, isPending:요청대기유무, isError:실패유무, error:에러정보
 	const { data: Vids, isPending } = useYoutubeQuery({ type: 'B' });
@@ -43,17 +37,3 @@ export default function Youtube() {
 		</Layout>
 	);
 }
-
-// const fetchYoutube = setUseState => {
-// 	const num = 10;
-// 	const pid = import.meta.env.VITE_PID;
-// 	const api_key = import.meta.env.VITE_YOUTUBE_API;
-// 	const baseUrl = 'https://www.googleapis.com/youtube/v3/playlistItems';
-// 	const url = `${baseUrl}?part=snippet&playlistId=${pid}&key=${api_key}&maxResults=${num}`;
-
-// 	fetch(url)
-// 		.then(data => data.json())
-// 		.then(json => {
-// 			setUseState(json.items);
-// 		});
-// };

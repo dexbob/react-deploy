@@ -5,7 +5,6 @@ import UseCombineText from '../../hooks/useCombineText';
 import Content from '../common/Content';
 
 export default function YoutubeDetail() {
-	console.log('YoutubeDetail');
 	const { id } = useParams();
 	const [YoutubeVid, setYoutubeVid] = useState(null);
 	const combineText = UseCombineText();

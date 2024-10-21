@@ -14,7 +14,6 @@ import { useZustandStore } from './hooks/useZustand';
 import ColorSelector from './components/common/ColorSelector';
 
 export default function App() {
-	console.log('App');
 	const IsMenu = useZustandStore(state => state.IsMenu);
 	const location = useLocation();
 	return (
