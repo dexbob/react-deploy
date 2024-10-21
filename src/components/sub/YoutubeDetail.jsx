@@ -20,7 +20,7 @@ export default function YoutubeDetail() {
 					<iframe
 						title='youtube'
 						type='text/html'
-						src={`http://www.youtube.com/embed/${YoutubeVid?.snippet.resourceId.videoId}`}></iframe>
+						src={`https://www.youtube.com/embed/${YoutubeVid?.snippet.resourceId.videoId}`}></iframe>
 				</figure>
 				<p>{YoutubeVid?.snippet.description}</p>
 				<span className='date'>
