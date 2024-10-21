@@ -46,10 +46,6 @@ export default function Gallery() {
 		<>
 			<Layout title={'GALLERY'}>
 				<Content delay={0} customMotion={customMotion}>
-					<div className='notice'>
-						<p>This web page was created for study purpose, not for commercial use</p>
-						<p>The Images below is sourced from unplash.com</p>
-					</div>
 					<article className='controller'>
 						<ul className='type'>
 							<li
@@ -90,6 +86,11 @@ export default function Gallery() {
 						})}
 					</section>
 				</Content>
+
+				<div className='notice'>
+					<p>This web page was created for study purpose, not for commercial use.</p>
+					<p>The Images below is sourced from unplash.com</p>
+				</div>
 			</Layout>
 			{IsModal && (
 				<Modal>
