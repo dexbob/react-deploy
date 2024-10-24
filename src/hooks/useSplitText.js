@@ -1,11 +1,11 @@
-export default function UseSplitText() {
+export default function useSplitText() {
 	return (ref, option) => {
 		if (!ref) return;
 		const defaultOption = { interval: 0, delay: 0 };
 		option = { ...defaultOption, ...option };
 
 		let text = ref.current.innerText;
-		let tags = "";
+		let tags = '';
 		let i = 0;
 		for (let letter of text) {
 			tags += `<span style='transition-delay:${
@@ -15,7 +15,7 @@ export default function UseSplitText() {
 		ref.current.innerHTML = tags;
 
 		setTimeout(() => {
-			ref.current.classList.add("on");
+			ref.current.classList.add('on');
 		}, 100);
 	};
 }

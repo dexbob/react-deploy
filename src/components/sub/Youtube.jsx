@@ -3,12 +3,12 @@ import Layout from '../common/Layout';
 import Pic from '../common/Pic';
 import Content from '../common/Content';
 import useShortenText from '../../hooks/useShortenText';
-import UseCombineText from '../../hooks/useCombineText';
+import useCombineText from '../../hooks/useCombineText';
 import { useYoutubeQuery } from '../../hooks/useYoutube';
 
 export default function Youtube() {
 	const shortenText = useShortenText();
-	const combineText = UseCombineText();
+	const combineText = useCombineText();
 
 	// data: 데이터정보, isPending:요청대기유무, isError:실패유무, error:에러정보
 	const { data: Vids, isPending } = useYoutubeQuery({ type: 'B' });

@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../common/Layout';
 import Content from '../common/Content';
-import UseCombineText from '../../hooks/useCombineText';
+import useCombineText from '../../hooks/useCombineText';
 
 export default function YoutubeDetail() {
 	const { id } = useParams();
 	const [YoutubeVid, setYoutubeVid] = useState(null);
-	const combineText = UseCombineText();
+	const combineText = useCombineText();
 
 	useEffect(() => {
 		fetchYoutube(id, setYoutubeVid);
