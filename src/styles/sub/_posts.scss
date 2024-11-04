@@ -1,0 +1,48 @@
+// 포스트 리스트 스타일
+.posts {
+	.content {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		h2 {
+			width: 100%;
+			margin-bottom: 0px;
+		}
+
+		.control {
+			width: 100%;
+			padding: 20px 0;
+			display: flex;
+			justify-content: space-between;
+			.searchBox {
+				display: flex;
+				gap: 10px;
+			}
+		}
+
+		table {
+			width: 100%;
+			tr {
+				th {
+					padding: 10px 30px;
+					background: rgba(var(--keyRGB), 1);
+					color: #fff;
+					text-align: left;
+				}
+			}
+
+			tr {
+				width: 100%;
+				td {
+					padding: 10px 30px;
+					border-bottom: 1px solid #bbb;
+				}
+				&:hover {
+					background: #999;
+				}
+			}
+		}
+	}
+}

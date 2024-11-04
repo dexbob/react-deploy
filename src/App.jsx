@@ -6,9 +6,11 @@ import Home from './components/main/home';
 import Contact from './components/sub/Contact';
 import Gallery from './components/sub/Gallery';
 import Members from './components/sub/Members';
-import Posts from './components/sub/Posts';
 import Youtube from './components/sub/Youtube';
 import YoutubeDetail from './components/sub/YoutubeDetail';
+import Posts from './components/sub/Posts';
+import PostAdd from './components/sub/PostAdd';
+import PostDetail from './components/sub/PostDetail';
 import MobileMenu from './components/common/MobileMenu';
 import ColorSelector from './components/common/ColorSelector';
 import { useZustandStore } from './hooks/useZustand';
@@ -34,6 +36,8 @@ export default function App() {
 					<Route path='/youtube/:id' element={<YoutubeDetail />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/posts' element={<Posts />} />
+					<Route path='/posts-add' element={<PostAdd />} />
+					<Route path='/posts/:slug' element={<PostDetail />} />
 				</Routes>
 			</AnimatePresence>
 
