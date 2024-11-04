@@ -26,7 +26,7 @@ export default function PostDetail() {
 			category: ref_category.current.value
 		};
 		axios
-			.put(`http://localhost:8000/posts/${slug}`, postData)
+			.put(`https://django-deploy-xkhx.onrender.com/posts/${slug}`, postData)
 			.then(res => {
 				// console.log(res);
 				confirm('게시글을 수정되었습니다.');
@@ -38,7 +38,7 @@ export default function PostDetail() {
 	const handleDelete = () => {
 		if (!confirm('게시글을 삭제하겠습니까?')) return;
 		axios
-			.delete(`http://localhost:8000/posts/${slug}`)
+			.delete(`https://django-deploy-xkhx.onrender.com/posts/${slug}`)
 			.then(res => {
 				// console.log(res);
 				confirm('게시글을 삭제되었습니다.');
@@ -48,7 +48,9 @@ export default function PostDetail() {
 	};
 
 	useEffect(() => {
-		axios.get(`http://localhost:8000/posts/${slug}`).then(res => setPost(res.data));
+		axios
+			.get(`https://django-deploy-xkhx.onrender.com/posts/${slug}`)
+			.then(res => setPost(res.data));
 	}, []);
 
 	return (

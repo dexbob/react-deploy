@@ -22,7 +22,7 @@ export default function PostAdd() {
 			category: ref_category.current.value
 		};
 		axios
-			.post('http://localhost:8000/posts/', postData)
+			.post('https://django-deploy-xkhx.onrender.com/posts/', postData)
 			.then(res => console.log(res))
 			.catch(err => console.log(err));
 		navigate('/posts/');

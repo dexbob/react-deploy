@@ -24,7 +24,7 @@ export default function Posts() {
 	};
 
 	const fetchAllPosts = () => {
-		axios.get('http://localhost:8000/posts').then(res => {
+		axios.get('https://django-deploy-xkhx.onrender.com/posts').then(res => {
 			// console.log(res.data);
 			setPosts(res.data);
 		});
@@ -37,7 +37,7 @@ export default function Posts() {
 	useEffect(() => {
 		if (!SearchText) return;
 		axios
-			.get(`http://localhost:8000/posts-search/?search=${SearchText}`)
+			.get(`https://django-deploy-xkhx.onrender.com/posts-search/?search=${SearchText}`)
 			.then(res => {
 				// console.log(res.data);
 				setPosts(res.data);
